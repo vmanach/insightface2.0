@@ -1,0 +1,296 @@
+Starting job on node: node01.enst.fr
+Job started at: Mon Feb  2 10:01:09 CET 2026
+Training: 2026-02-02 10:01:20,964-rank_id: 0
+Training: 2026-02-02 10:02:13,152-: margin_list              (1.0, 0.5, 0.0)
+Training: 2026-02-02 10:02:13,152-: network                  r50
+Training: 2026-02-02 10:02:13,152-: resume                   False
+Training: 2026-02-02 10:02:13,153-: save_all_states          False
+Training: 2026-02-02 10:02:13,153-: output                   /home/ids/vimanach/artifacts/trained/arcface_torch/r50/bupt-balancedface-mxnet_biased_African_10pct/Caucasian_African/
+Training: 2026-02-02 10:02:13,153-: embedding_size           512
+Training: 2026-02-02 10:02:13,153-: sample_rate              1.0
+Training: 2026-02-02 10:02:13,153-: interclass_filtering_threshold0
+Training: 2026-02-02 10:02:13,153-: fp16                     True
+Training: 2026-02-02 10:02:13,153-: batch_size               512
+Training: 2026-02-02 10:02:13,153-: optimizer                sgd
+Training: 2026-02-02 10:02:13,153-: lr                       0.1
+Training: 2026-02-02 10:02:13,153-: momentum                 0.9
+Training: 2026-02-02 10:02:13,153-: weight_decay             0.0005
+Training: 2026-02-02 10:02:13,153-: verbose                  2000
+Training: 2026-02-02 10:02:13,153-: frequent                 10
+Training: 2026-02-02 10:02:13,153-: dali                     False
+Training: 2026-02-02 10:02:13,153-: dali_aug                 False
+Training: 2026-02-02 10:02:13,153-: gradient_acc             1
+Training: 2026-02-02 10:02:13,153-: seed                     2048
+Training: 2026-02-02 10:02:13,153-: num_workers              2
+Training: 2026-02-02 10:02:13,153-: wandb_key                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Training: 2026-02-02 10:02:13,153-: suffix_run_name          None
+Training: 2026-02-02 10:02:13,153-: using_wandb              False
+Training: 2026-02-02 10:02:13,153-: wandb_entity             entity
+Training: 2026-02-02 10:02:13,153-: wandb_project            project
+Training: 2026-02-02 10:02:13,153-: wandb_log_all            True
+Training: 2026-02-02 10:02:13,153-: save_artifacts           False
+Training: 2026-02-02 10:02:13,153-: wandb_resume             False
+Training: 2026-02-02 10:02:13,153-: rec                      /home/ids/vimanach/datasets/bupt-balancedface-mxnet_biased_African_10pct/flattened__Caucasian_African
+Training: 2026-02-02 10:02:13,153-: num_classes              7700
+Training: 2026-02-02 10:02:13,153-: num_image                359021
+Training: 2026-02-02 10:02:13,153-: num_epoch                20
+Training: 2026-02-02 10:02:13,153-: warmup_epoch             0
+Training: 2026-02-02 10:02:13,153-: val_targets              ['African_test', 'Asian_test', 'Caucasian_test', 'Indian_test']
+Training: 2026-02-02 10:02:13,153-: total_batch_size         1536
+Training: 2026-02-02 10:02:13,153-: warmup_step              0
+Training: 2026-02-02 10:02:13,153-: total_step               4660
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+torch.Size([12000, 3, 112, 112])
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+torch.Size([12000, 3, 112, 112])
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+torch.Size([12000, 3, 112, 112])
+loading bin 0
+loading bin 1000
+loading bin 2000
+loading bin 3000
+loading bin 4000
+loading bin 5000
+loading bin 6000
+loading bin 7000
+loading bin 8000
+loading bin 9000
+loading bin 10000
+loading bin 11000
+torch.Size([12000, 3, 112, 112])
+Training: 2026-02-02 10:02:46,388-Speed 3873.58 samples/sec   Loss 45.2233   LearningRate 0.099571   Epoch: 0   Global Step: 20   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:02:50,362-Speed 3865.92 samples/sec   Loss 43.0192   LearningRate 0.099356   Epoch: 0   Global Step: 30   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:02:54,350-Speed 3851.41 samples/sec   Loss 41.5656   LearningRate 0.099142   Epoch: 0   Global Step: 40   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:02:58,342-Speed 3848.66 samples/sec   Loss 40.8271   LearningRate 0.098927   Epoch: 0   Global Step: 50   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:03:02,335-Speed 3847.41 samples/sec   Loss 39.8171   LearningRate 0.098712   Epoch: 0   Global Step: 60   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:03:06,331-Speed 3844.37 samples/sec   Loss 38.9932   LearningRate 0.098498   Epoch: 0   Global Step: 70   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:03:10,335-Speed 3835.88 samples/sec   Loss 38.2651   LearningRate 0.098283   Epoch: 0   Global Step: 80   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:03:14,341-Speed 3835.21 samples/sec   Loss 37.6192   LearningRate 0.098069   Epoch: 0   Global Step: 90   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:03:18,346-Speed 3835.18 samples/sec   Loss 36.8565   LearningRate 0.097854   Epoch: 0   Global Step: 100   Fp16 Grad Scale: 32768   Required: 1 hours
+Training: 2026-02-02 10:03:22,389-Speed 3838.23 samples/sec   Loss 36.1951   LearningRate 0.097639   Epoch: 0   Global Step: 110   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:26,407-Speed 3824.20 samples/sec   Loss 35.5497   LearningRate 0.097425   Epoch: 0   Global Step: 120   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:30,419-Speed 3828.71 samples/sec   Loss 34.9238   LearningRate 0.097210   Epoch: 0   Global Step: 130   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:34,428-Speed 3831.96 samples/sec   Loss 34.2751   LearningRate 0.096996   Epoch: 0   Global Step: 140   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:38,443-Speed 3826.12 samples/sec   Loss 33.7003   LearningRate 0.096781   Epoch: 0   Global Step: 150   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:42,458-Speed 3826.36 samples/sec   Loss 33.1095   LearningRate 0.096567   Epoch: 0   Global Step: 160   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:46,471-Speed 3827.71 samples/sec   Loss 32.6465   LearningRate 0.096352   Epoch: 0   Global Step: 170   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:50,492-Speed 3819.90 samples/sec   Loss 32.0193   LearningRate 0.096137   Epoch: 0   Global Step: 180   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:54,521-Speed 3812.83 samples/sec   Loss 31.3484   LearningRate 0.095923   Epoch: 0   Global Step: 190   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:03:58,554-Speed 3809.42 samples/sec   Loss 30.7723   LearningRate 0.095708   Epoch: 0   Global Step: 200   Fp16 Grad Scale: 65536   Required: 1 hours
+Training: 2026-02-02 10:04:02,597-Speed 3800.14 samples/sec   Loss 30.1460   LearningRate 0.095494   Epoch: 0   Global Step: 210   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:06,638-Speed 3801.20 samples/sec   Loss 29.7238   LearningRate 0.095279   Epoch: 0   Global Step: 220   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:10,679-Speed 3802.09 samples/sec   Loss 29.0849   LearningRate 0.095064   Epoch: 0   Global Step: 230   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:16,968-Speed 2442.82 samples/sec   Loss 27.4697   LearningRate 0.094850   Epoch: 1   Global Step: 240   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:21,024-Speed 3786.95 samples/sec   Loss 26.4860   LearningRate 0.094635   Epoch: 1   Global Step: 250   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:25,082-Speed 3786.31 samples/sec   Loss 26.2434   LearningRate 0.094421   Epoch: 1   Global Step: 260   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:29,248-Speed 3687.15 samples/sec   Loss 26.0808   LearningRate 0.094206   Epoch: 1   Global Step: 270   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:33,310-Speed 3781.33 samples/sec   Loss 25.6754   LearningRate 0.093991   Epoch: 1   Global Step: 280   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:37,372-Speed 3781.80 samples/sec   Loss 25.4035   LearningRate 0.093777   Epoch: 1   Global Step: 290   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:41,439-Speed 3777.64 samples/sec   Loss 24.8865   LearningRate 0.093562   Epoch: 1   Global Step: 300   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:45,505-Speed 3778.12 samples/sec   Loss 24.6183   LearningRate 0.093348   Epoch: 1   Global Step: 310   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:49,578-Speed 3772.45 samples/sec   Loss 24.3713   LearningRate 0.093133   Epoch: 1   Global Step: 320   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:53,661-Speed 3762.67 samples/sec   Loss 24.0970   LearningRate 0.092918   Epoch: 1   Global Step: 330   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:04:57,737-Speed 3768.56 samples/sec   Loss 23.8395   LearningRate 0.092704   Epoch: 1   Global Step: 340   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:01,811-Speed 3771.77 samples/sec   Loss 23.4227   LearningRate 0.092489   Epoch: 1   Global Step: 350   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:05,870-Speed 3784.39 samples/sec   Loss 23.1865   LearningRate 0.092275   Epoch: 1   Global Step: 360   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:09,934-Speed 3779.93 samples/sec   Loss 22.7832   LearningRate 0.092060   Epoch: 1   Global Step: 370   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:13,999-Speed 3778.71 samples/sec   Loss 22.5699   LearningRate 0.091845   Epoch: 1   Global Step: 380   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:18,071-Speed 3773.27 samples/sec   Loss 22.3970   LearningRate 0.091631   Epoch: 1   Global Step: 390   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:22,135-Speed 3779.30 samples/sec   Loss 22.0594   LearningRate 0.091416   Epoch: 1   Global Step: 400   Fp16 Grad Scale: 131072   Required: 1 hours
+Training: 2026-02-02 10:05:26,198-Speed 3781.50 samples/sec   Loss 21.8100   LearningRate 0.091202   Epoch: 1   Global Step: 410   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:05:30,263-Speed 3778.59 samples/sec   Loss 21.6250   LearningRate 0.090987   Epoch: 1   Global Step: 420   Fp16 Grad Scale: 262144   Required: 1 hours
+Training: 2026-02-02 10:05:34,334-Speed 3774.02 samples/sec   Loss 21.1898   LearningRate 0.090773   Epoch: 1   Global Step: 430   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:05:38,407-Speed 3771.69 samples/sec   Loss 21.1175   LearningRate 0.090558   Epoch: 1   Global Step: 440   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:05:42,477-Speed 3774.91 samples/sec   Loss 20.7171   LearningRate 0.090343   Epoch: 1   Global Step: 450   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:05:46,544-Speed 3777.76 samples/sec   Loss 20.5821   LearningRate 0.090129   Epoch: 1   Global Step: 460   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:05:52,638-Speed 2521.05 samples/sec   Loss 19.5629   LearningRate 0.089914   Epoch: 2   Global Step: 470   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:05:56,709-Speed 3773.43 samples/sec   Loss 18.1807   LearningRate 0.089700   Epoch: 2   Global Step: 480   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:00,769-Speed 3783.03 samples/sec   Loss 17.8940   LearningRate 0.089485   Epoch: 2   Global Step: 490   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:04,836-Speed 3777.22 samples/sec   Loss 18.1278   LearningRate 0.089270   Epoch: 2   Global Step: 500   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:08,898-Speed 3782.25 samples/sec   Loss 17.9215   LearningRate 0.089056   Epoch: 2   Global Step: 510   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:12,969-Speed 3773.65 samples/sec   Loss 18.1349   LearningRate 0.088841   Epoch: 2   Global Step: 520   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:17,038-Speed 3775.12 samples/sec   Loss 17.9683   LearningRate 0.088627   Epoch: 2   Global Step: 530   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:21,100-Speed 3782.49 samples/sec   Loss 17.9014   LearningRate 0.088412   Epoch: 2   Global Step: 540   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:25,177-Speed 3768.40 samples/sec   Loss 17.9127   LearningRate 0.088197   Epoch: 2   Global Step: 550   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:29,247-Speed 3774.55 samples/sec   Loss 17.7279   LearningRate 0.087983   Epoch: 2   Global Step: 560   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:06:33,324-Speed 3767.91 samples/sec   Loss 17.5971   LearningRate 0.087768   Epoch: 2   Global Step: 570   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:06:37,407-Speed 3762.78 samples/sec   Loss 17.5600   LearningRate 0.087554   Epoch: 2   Global Step: 580   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:06:41,487-Speed 3765.62 samples/sec   Loss 17.5156   LearningRate 0.087339   Epoch: 2   Global Step: 590   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:06:45,554-Speed 3776.71 samples/sec   Loss 17.4915   LearningRate 0.087124   Epoch: 2   Global Step: 600   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:49,632-Speed 3767.41 samples/sec   Loss 17.3983   LearningRate 0.086910   Epoch: 2   Global Step: 610   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:53,704-Speed 3772.52 samples/sec   Loss 17.0157   LearningRate 0.086695   Epoch: 2   Global Step: 620   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:06:57,787-Speed 3762.70 samples/sec   Loss 17.1823   LearningRate 0.086481   Epoch: 2   Global Step: 630   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:01,853-Speed 3778.56 samples/sec   Loss 17.0520   LearningRate 0.086266   Epoch: 2   Global Step: 640   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:05,922-Speed 3775.44 samples/sec   Loss 16.8832   LearningRate 0.086052   Epoch: 2   Global Step: 650   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:09,989-Speed 3777.34 samples/sec   Loss 16.5541   LearningRate 0.085837   Epoch: 2   Global Step: 660   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:14,059-Speed 3774.13 samples/sec   Loss 16.7753   LearningRate 0.085622   Epoch: 2   Global Step: 670   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:18,135-Speed 3769.08 samples/sec   Loss 16.4726   LearningRate 0.085408   Epoch: 2   Global Step: 680   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:22,214-Speed 3766.58 samples/sec   Loss 16.5089   LearningRate 0.085193   Epoch: 2   Global Step: 690   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:07:29,042-Speed 2249.84 samples/sec   Loss 16.1303   LearningRate 0.084979   Epoch: 3   Global Step: 700   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:33,243-Speed 3656.65 samples/sec   Loss 14.3600   LearningRate 0.084764   Epoch: 3   Global Step: 710   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:37,306-Speed 3781.33 samples/sec   Loss 14.1692   LearningRate 0.084549   Epoch: 3   Global Step: 720   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:41,373-Speed 3777.43 samples/sec   Loss 14.4521   LearningRate 0.084335   Epoch: 3   Global Step: 730   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:45,449-Speed 3768.60 samples/sec   Loss 14.2932   LearningRate 0.084120   Epoch: 3   Global Step: 740   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:49,528-Speed 3767.28 samples/sec   Loss 14.4329   LearningRate 0.083906   Epoch: 3   Global Step: 750   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:53,605-Speed 3768.00 samples/sec   Loss 14.2599   LearningRate 0.083691   Epoch: 3   Global Step: 760   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:07:57,683-Speed 3767.10 samples/sec   Loss 14.3963   LearningRate 0.083476   Epoch: 3   Global Step: 770   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:01,754-Speed 3773.55 samples/sec   Loss 14.5236   LearningRate 0.083262   Epoch: 3   Global Step: 780   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:05,828-Speed 3771.33 samples/sec   Loss 14.5166   LearningRate 0.083047   Epoch: 3   Global Step: 790   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:09,902-Speed 3770.73 samples/sec   Loss 14.5787   LearningRate 0.082833   Epoch: 3   Global Step: 800   Fp16 Grad Scale: 524288   Required: 0 hours
+Training: 2026-02-02 10:08:13,972-Speed 3774.46 samples/sec   Loss 14.3927   LearningRate 0.082618   Epoch: 3   Global Step: 810   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:18,039-Speed 3777.09 samples/sec   Loss 14.3099   LearningRate 0.082403   Epoch: 3   Global Step: 820   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:22,106-Speed 3777.66 samples/sec   Loss 14.3518   LearningRate 0.082189   Epoch: 3   Global Step: 830   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:26,185-Speed 3765.94 samples/sec   Loss 14.1405   LearningRate 0.081974   Epoch: 3   Global Step: 840   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:30,262-Speed 3768.59 samples/sec   Loss 14.2857   LearningRate 0.081760   Epoch: 3   Global Step: 850   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:34,340-Speed 3767.11 samples/sec   Loss 14.3479   LearningRate 0.081545   Epoch: 3   Global Step: 860   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:38,416-Speed 3768.57 samples/sec   Loss 14.3207   LearningRate 0.081330   Epoch: 3   Global Step: 870   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:08:42,489-Speed 3771.81 samples/sec   Loss 14.2660   LearningRate 0.081116   Epoch: 3   Global Step: 880   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:08:46,564-Speed 3770.55 samples/sec   Loss 14.1236   LearningRate 0.080901   Epoch: 3   Global Step: 890   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:08:50,634-Speed 3774.60 samples/sec   Loss 14.2166   LearningRate 0.080687   Epoch: 3   Global Step: 900   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:08:54,702-Speed 3776.24 samples/sec   Loss 14.0537   LearningRate 0.080472   Epoch: 3   Global Step: 910   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:08:58,775-Speed 3770.86 samples/sec   Loss 14.0530   LearningRate 0.080258   Epoch: 3   Global Step: 920   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:09:02,839-Speed 3780.23 samples/sec   Loss 13.8491   LearningRate 0.080043   Epoch: 3   Global Step: 930   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:09:08,827-Speed 2565.57 samples/sec   Loss 12.2000   LearningRate 0.079828   Epoch: 4   Global Step: 940   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:09:12,895-Speed 3776.34 samples/sec   Loss 12.0255   LearningRate 0.079614   Epoch: 4   Global Step: 950   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:09:16,963-Speed 3776.13 samples/sec   Loss 12.1273   LearningRate 0.079399   Epoch: 4   Global Step: 960   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:09:21,033-Speed 3774.64 samples/sec   Loss 12.0534   LearningRate 0.079185   Epoch: 4   Global Step: 970   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:09:25,101-Speed 3776.29 samples/sec   Loss 12.0989   LearningRate 0.078970   Epoch: 4   Global Step: 980   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:29,170-Speed 3775.66 samples/sec   Loss 12.2901   LearningRate 0.078755   Epoch: 4   Global Step: 990   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:33,244-Speed 3770.38 samples/sec   Loss 12.2388   LearningRate 0.078541   Epoch: 4   Global Step: 1000   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:37,315-Speed 3774.16 samples/sec   Loss 12.2472   LearningRate 0.078326   Epoch: 4   Global Step: 1010   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:41,388-Speed 3771.10 samples/sec   Loss 12.4362   LearningRate 0.078112   Epoch: 4   Global Step: 1020   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:45,465-Speed 3768.44 samples/sec   Loss 12.5357   LearningRate 0.077897   Epoch: 4   Global Step: 1030   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:49,535-Speed 3773.76 samples/sec   Loss 12.3370   LearningRate 0.077682   Epoch: 4   Global Step: 1040   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:53,603-Speed 3776.14 samples/sec   Loss 12.4644   LearningRate 0.077468   Epoch: 4   Global Step: 1050   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:09:57,673-Speed 3774.29 samples/sec   Loss 12.5620   LearningRate 0.077253   Epoch: 4   Global Step: 1060   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:01,750-Speed 3767.75 samples/sec   Loss 12.4159   LearningRate 0.077039   Epoch: 4   Global Step: 1070   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:05,820-Speed 3774.61 samples/sec   Loss 12.3988   LearningRate 0.076824   Epoch: 4   Global Step: 1080   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:09,886-Speed 3777.67 samples/sec   Loss 12.4277   LearningRate 0.076609   Epoch: 4   Global Step: 1090   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:13,962-Speed 3769.06 samples/sec   Loss 12.4446   LearningRate 0.076395   Epoch: 4   Global Step: 1100   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:18,041-Speed 3767.21 samples/sec   Loss 12.4288   LearningRate 0.076180   Epoch: 4   Global Step: 1110   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:22,118-Speed 3767.31 samples/sec   Loss 12.3455   LearningRate 0.075966   Epoch: 4   Global Step: 1120   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:26,186-Speed 3776.13 samples/sec   Loss 12.3739   LearningRate 0.075751   Epoch: 4   Global Step: 1130   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:30,254-Speed 3777.24 samples/sec   Loss 12.2326   LearningRate 0.075536   Epoch: 4   Global Step: 1140   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:34,322-Speed 3776.25 samples/sec   Loss 12.2679   LearningRate 0.075322   Epoch: 4   Global Step: 1150   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:10:38,392-Speed 3773.92 samples/sec   Loss 12.2203   LearningRate 0.075107   Epoch: 4   Global Step: 1160   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:10:44,315-Speed 2593.69 samples/sec   Loss 11.2170   LearningRate 0.074893   Epoch: 5   Global Step: 1170   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:10:48,381-Speed 3778.25 samples/sec   Loss 10.3019   LearningRate 0.074678   Epoch: 5   Global Step: 1180   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:10:52,451-Speed 3774.74 samples/sec   Loss 10.3357   LearningRate 0.074464   Epoch: 5   Global Step: 1190   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:10:56,519-Speed 3775.69 samples/sec   Loss 10.6018   LearningRate 0.074249   Epoch: 5   Global Step: 1200   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:11:00,594-Speed 3770.49 samples/sec   Loss 10.6484   LearningRate 0.074034   Epoch: 5   Global Step: 1210   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:11:04,655-Speed 3782.58 samples/sec   Loss 10.4920   LearningRate 0.073820   Epoch: 5   Global Step: 1220   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:11:08,718-Speed 3781.37 samples/sec   Loss 10.7922   LearningRate 0.073605   Epoch: 5   Global Step: 1230   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:11:12,782-Speed 3779.70 samples/sec   Loss 10.7235   LearningRate 0.073391   Epoch: 5   Global Step: 1240   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:11:16,847-Speed 3779.02 samples/sec   Loss 10.6453   LearningRate 0.073176   Epoch: 5   Global Step: 1250   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:11:20,915-Speed 3776.19 samples/sec   Loss 10.8462   LearningRate 0.072961   Epoch: 5   Global Step: 1260   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:24,984-Speed 3775.69 samples/sec   Loss 10.7851   LearningRate 0.072747   Epoch: 5   Global Step: 1270   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:29,051-Speed 3777.12 samples/sec   Loss 10.9670   LearningRate 0.072532   Epoch: 5   Global Step: 1280   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:33,125-Speed 3770.60 samples/sec   Loss 10.9308   LearningRate 0.072318   Epoch: 5   Global Step: 1290   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:37,194-Speed 3774.70 samples/sec   Loss 10.8964   LearningRate 0.072103   Epoch: 5   Global Step: 1300   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:41,268-Speed 3771.44 samples/sec   Loss 10.8037   LearningRate 0.071888   Epoch: 5   Global Step: 1310   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:45,339-Speed 3773.51 samples/sec   Loss 11.0465   LearningRate 0.071674   Epoch: 5   Global Step: 1320   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:49,411-Speed 3772.03 samples/sec   Loss 10.9041   LearningRate 0.071459   Epoch: 5   Global Step: 1330   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:53,489-Speed 3767.12 samples/sec   Loss 10.8852   LearningRate 0.071245   Epoch: 5   Global Step: 1340   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:11:57,562-Speed 3771.07 samples/sec   Loss 10.9904   LearningRate 0.071030   Epoch: 5   Global Step: 1350   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:12:01,639-Speed 3768.86 samples/sec   Loss 10.8350   LearningRate 0.070815   Epoch: 5   Global Step: 1360   Fp16 Grad Scale: 524288   Required: 0 hours
+Training: 2026-02-02 10:12:05,714-Speed 3769.23 samples/sec   Loss 10.8852   LearningRate 0.070601   Epoch: 5   Global Step: 1370   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:12:09,787-Speed 3771.71 samples/sec   Loss 10.9724   LearningRate 0.070386   Epoch: 5   Global Step: 1380   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:12:13,867-Speed 3765.45 samples/sec   Loss 10.9876   LearningRate 0.070172   Epoch: 5   Global Step: 1390   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:12:19,946-Speed 2527.29 samples/sec   Loss 10.7099   LearningRate 0.069957   Epoch: 6   Global Step: 1400   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:24,009-Speed 3780.98 samples/sec   Loss 9.1061   LearningRate 0.069742   Epoch: 6   Global Step: 1410   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:28,087-Speed 3767.50 samples/sec   Loss 9.0805   LearningRate 0.069528   Epoch: 6   Global Step: 1420   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:32,164-Speed 3767.47 samples/sec   Loss 9.2207   LearningRate 0.069313   Epoch: 6   Global Step: 1430   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:36,235-Speed 3773.99 samples/sec   Loss 9.3224   LearningRate 0.069099   Epoch: 6   Global Step: 1440   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:40,307-Speed 3772.09 samples/sec   Loss 9.3718   LearningRate 0.068884   Epoch: 6   Global Step: 1450   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:44,381-Speed 3771.33 samples/sec   Loss 9.4309   LearningRate 0.068670   Epoch: 6   Global Step: 1460   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:48,453-Speed 3772.75 samples/sec   Loss 9.4798   LearningRate 0.068455   Epoch: 6   Global Step: 1470   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:52,526-Speed 3771.67 samples/sec   Loss 9.5497   LearningRate 0.068240   Epoch: 6   Global Step: 1480   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:12:56,601-Speed 3769.87 samples/sec   Loss 9.6706   LearningRate 0.068026   Epoch: 6   Global Step: 1490   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:13:00,674-Speed 3771.76 samples/sec   Loss 9.5666   LearningRate 0.067811   Epoch: 6   Global Step: 1500   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:04,747-Speed 3772.21 samples/sec   Loss 9.6835   LearningRate 0.067597   Epoch: 6   Global Step: 1510   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:08,817-Speed 3774.63 samples/sec   Loss 9.7564   LearningRate 0.067382   Epoch: 6   Global Step: 1520   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:12,885-Speed 3775.96 samples/sec   Loss 9.7634   LearningRate 0.067167   Epoch: 6   Global Step: 1530   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:16,956-Speed 3773.84 samples/sec   Loss 9.6268   LearningRate 0.066953   Epoch: 6   Global Step: 1540   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:21,028-Speed 3772.23 samples/sec   Loss 9.8113   LearningRate 0.066738   Epoch: 6   Global Step: 1550   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:25,099-Speed 3773.33 samples/sec   Loss 9.7186   LearningRate 0.066524   Epoch: 6   Global Step: 1560   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:29,173-Speed 3770.76 samples/sec   Loss 9.7278   LearningRate 0.066309   Epoch: 6   Global Step: 1570   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:33,243-Speed 3774.29 samples/sec   Loss 9.8694   LearningRate 0.066094   Epoch: 6   Global Step: 1580   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:37,315-Speed 3772.74 samples/sec   Loss 9.8503   LearningRate 0.065880   Epoch: 6   Global Step: 1590   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:41,384-Speed 3775.66 samples/sec   Loss 9.7002   LearningRate 0.065665   Epoch: 6   Global Step: 1600   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:45,454-Speed 3774.09 samples/sec   Loss 9.7926   LearningRate 0.065451   Epoch: 6   Global Step: 1610   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:49,535-Speed 3764.65 samples/sec   Loss 9.8250   LearningRate 0.065236   Epoch: 6   Global Step: 1620   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:53,601-Speed 3778.41 samples/sec   Loss 9.7349   LearningRate 0.065021   Epoch: 6   Global Step: 1630   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:13:59,618-Speed 2552.96 samples/sec   Loss 8.1470   LearningRate 0.064807   Epoch: 7   Global Step: 1640   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:03,685-Speed 3778.18 samples/sec   Loss 8.0777   LearningRate 0.064592   Epoch: 7   Global Step: 1650   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:07,760-Speed 3769.50 samples/sec   Loss 8.0030   LearningRate 0.064378   Epoch: 7   Global Step: 1660   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:11,833-Speed 3772.86 samples/sec   Loss 8.1183   LearningRate 0.064163   Epoch: 7   Global Step: 1670   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:15,914-Speed 3763.87 samples/sec   Loss 8.1237   LearningRate 0.063948   Epoch: 7   Global Step: 1680   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:19,997-Speed 3762.74 samples/sec   Loss 8.3267   LearningRate 0.063734   Epoch: 7   Global Step: 1690   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:24,070-Speed 3771.77 samples/sec   Loss 8.2461   LearningRate 0.063519   Epoch: 7   Global Step: 1700   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:28,155-Speed 3761.16 samples/sec   Loss 8.4353   LearningRate 0.063305   Epoch: 7   Global Step: 1710   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:14:32,225-Speed 3775.17 samples/sec   Loss 8.4839   LearningRate 0.063090   Epoch: 7   Global Step: 1720   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:14:36,293-Speed 3776.46 samples/sec   Loss 8.5263   LearningRate 0.062876   Epoch: 7   Global Step: 1730   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:14:40,361-Speed 3776.17 samples/sec   Loss 8.7220   LearningRate 0.062661   Epoch: 7   Global Step: 1740   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:14:44,431-Speed 3775.14 samples/sec   Loss 8.6288   LearningRate 0.062446   Epoch: 7   Global Step: 1750   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:14:48,505-Speed 3771.28 samples/sec   Loss 8.6620   LearningRate 0.062232   Epoch: 7   Global Step: 1760   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:14:52,585-Speed 3766.10 samples/sec   Loss 8.6815   LearningRate 0.062017   Epoch: 7   Global Step: 1770   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:14:56,659-Speed 3771.05 samples/sec   Loss 8.7611   LearningRate 0.061803   Epoch: 7   Global Step: 1780   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:00,729-Speed 3775.00 samples/sec   Loss 8.7421   LearningRate 0.061588   Epoch: 7   Global Step: 1790   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:04,795-Speed 3777.90 samples/sec   Loss 8.6728   LearningRate 0.061373   Epoch: 7   Global Step: 1800   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:08,864-Speed 3775.73 samples/sec   Loss 8.6239   LearningRate 0.061159   Epoch: 7   Global Step: 1810   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:12,935-Speed 3773.68 samples/sec   Loss 8.8807   LearningRate 0.060944   Epoch: 7   Global Step: 1820   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:15:17,003-Speed 3775.72 samples/sec   Loss 8.9620   LearningRate 0.060730   Epoch: 7   Global Step: 1830   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:21,065-Speed 3782.36 samples/sec   Loss 8.7884   LearningRate 0.060515   Epoch: 7   Global Step: 1840   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:25,132-Speed 3777.98 samples/sec   Loss 8.8302   LearningRate 0.060300   Epoch: 7   Global Step: 1850   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:29,197-Speed 3778.88 samples/sec   Loss 8.7584   LearningRate 0.060086   Epoch: 7   Global Step: 1860   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:35,184-Speed 2566.10 samples/sec   Loss 7.7016   LearningRate 0.059871   Epoch: 8   Global Step: 1870   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:39,265-Speed 3764.57 samples/sec   Loss 7.0610   LearningRate 0.059657   Epoch: 8   Global Step: 1880   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:43,340-Speed 3769.35 samples/sec   Loss 7.0657   LearningRate 0.059442   Epoch: 8   Global Step: 1890   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:47,412-Speed 3772.85 samples/sec   Loss 7.0097   LearningRate 0.059227   Epoch: 8   Global Step: 1900   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:51,478-Speed 3778.71 samples/sec   Loss 7.2461   LearningRate 0.059013   Epoch: 8   Global Step: 1910   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:55,537-Speed 3784.07 samples/sec   Loss 7.3293   LearningRate 0.058798   Epoch: 8   Global Step: 1920   Fp16 Grad Scale: 131072   Required: 0 hours
+Training: 2026-02-02 10:15:59,603-Speed 3777.95 samples/sec   Loss 7.3804   LearningRate 0.058584   Epoch: 8   Global Step: 1930   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:03,676-Speed 3772.35 samples/sec   Loss 7.5254   LearningRate 0.058369   Epoch: 8   Global Step: 1940   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:07,747-Speed 3773.03 samples/sec   Loss 7.5212   LearningRate 0.058155   Epoch: 8   Global Step: 1950   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:11,819-Speed 3772.35 samples/sec   Loss 7.5490   LearningRate 0.057940   Epoch: 8   Global Step: 1960   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:15,888-Speed 3775.77 samples/sec   Loss 7.7015   LearningRate 0.057725   Epoch: 8   Global Step: 1970   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:19,957-Speed 3774.83 samples/sec   Loss 7.6946   LearningRate 0.057511   Epoch: 8   Global Step: 1980   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:24,029-Speed 3773.11 samples/sec   Loss 7.6998   LearningRate 0.057296   Epoch: 8   Global Step: 1990   Fp16 Grad Scale: 262144   Required: 0 hours
+Training: 2026-02-02 10:16:28,097-Speed 3776.08 samples/sec   Loss 7.7911   LearningRate 0.057082   Epoch: 8   Global Step: 2000   Fp16 Grad Scale: 262144   Required: 0 hours
+testing verification..
+(12000, 512)
+infer time 21.482031999999986
+Job finished at: Mon Feb  2 10:16:57 CET 2026

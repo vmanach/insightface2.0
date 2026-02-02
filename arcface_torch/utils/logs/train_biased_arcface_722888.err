@@ -1,0 +1,87 @@
+W0202 10:01:14.260000 624979 site-packages/torch/distributed/run.py:793] 
+W0202 10:01:14.260000 624979 site-packages/torch/distributed/run.py:793] *****************************************
+W0202 10:01:14.260000 624979 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0202 10:01:14.260000 624979 site-packages/torch/distributed/run.py:793] *****************************************
+/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/nn/parallel/distributed.py:2351: UserWarning: You passed find_unused_parameters=true to DistributedDataParallel, `_set_static_graph` will detect unused parameters automatically, so you do not need to set find_unused_parameters=true, just be sure these unused parameters will not change during training loop while calling `_set_static_graph`.
+  warnings.warn(
+/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/nn/parallel/distributed.py:2351: UserWarning: You passed find_unused_parameters=true to DistributedDataParallel, `_set_static_graph` will detect unused parameters automatically, so you do not need to set find_unused_parameters=true, just be sure these unused parameters will not change during training loop while calling `_set_static_graph`.
+  warnings.warn(
+/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/nn/parallel/distributed.py:2351: UserWarning: You passed find_unused_parameters=true to DistributedDataParallel, `_set_static_graph` will detect unused parameters automatically, so you do not need to set find_unused_parameters=true, just be sure these unused parameters will not change during training loop while calling `_set_static_graph`.
+  warnings.warn(
+/home/ids/vimanach/repos/insightface/recognition/arcface_torch/partial_fc_v2.py:157: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(self.fp16):
+/home/ids/vimanach/repos/insightface/recognition/arcface_torch/partial_fc_v2.py:157: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(self.fp16):
+/home/ids/vimanach/repos/insightface/recognition/arcface_torch/partial_fc_v2.py:157: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(self.fp16):
+/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/optim/lr_scheduler.py:224: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/optim/lr_scheduler.py:224: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/optim/lr_scheduler.py:224: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/train_v2.py", line 257, in <module>
+[rank0]:     main(parser.parse_args())
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/train_v2.py", line 214, in main
+[rank0]:     callback_verification(global_step, backbone)
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/utils/utils_callbacks.py", line 64, in __call__
+[rank0]:     self.ver_test(backbone, num_update)
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/utils/utils_callbacks.py", line 31, in ver_test
+[rank0]:     acc1, std1, acc2, std2, xnorm, embeddings_list = verification.test(
+[rank0]:                                                      ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/eval/verification.py", line 281, in test
+[rank0]:     _, _, accuracy, val, val_std, far = evaluate(embeddings, issame_list, nrof_folds=nfolds)
+[rank0]:                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/eval/verification.py", line 189, in evaluate
+[rank0]:     val, val_std, far = calculate_val(thresholds,
+[rank0]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/eval/verification.py", line 149, in calculate_val
+[rank0]:     f = interpolate.interp1d(far_train, thresholds, kind='slinear')
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/scipy/interpolate/_interpolate.py", line 420, in __init__
+[rank0]:     self._spline = make_interp_spline(xx, yy, k=order,
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/scipy/interpolate/_bsplines.py", line 1573, in make_interp_spline
+[rank0]:     raise ValueError("Expect x to not have duplicates")
+[rank0]: ValueError: Expect x to not have duplicates
+[rank0]:[W202 10:16:52.321486595 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0202 10:16:55.375000 624979 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 624999 closing signal SIGTERM
+W0202 10:16:55.376000 624979 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 625000 closing signal SIGTERM
+E0202 10:16:56.794000 624979 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 624998) of binary: /home/ids/vimanach/.conda/envs/pydev/bin/python3.11
+Traceback (most recent call last):
+  File "/home/ids/vimanach/.conda/envs/pydev/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_v2.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-02-02_10:16:55
+  host      : node01.enst.fr
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 624998)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: node01: task 0: Exited with exit code 1

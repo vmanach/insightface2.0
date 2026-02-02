@@ -1,0 +1,69 @@
+W0202 00:02:14.502000 3935061 site-packages/torch/distributed/run.py:793] 
+W0202 00:02:14.502000 3935061 site-packages/torch/distributed/run.py:793] *****************************************
+W0202 00:02:14.502000 3935061 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0202 00:02:14.502000 3935061 site-packages/torch/distributed/run.py:793] *****************************************
+Traceback (most recent call last):
+  File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/train_v2.py", line 9, in <module>
+Traceback (most recent call last):
+  File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/train_v2.py", line 9, in <module>
+Traceback (most recent call last):
+  File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/train_v2.py", line 9, in <module>
+        from dataset import get_dataloaderfrom dataset import get_dataloader
+
+  File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/dataset.py", line 7, in <module>
+  File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/dataset.py", line 7, in <module>
+    from dataset import get_dataloader
+        import mxnet as mximport mxnet as mx
+
+  File "/home/ids/vimanach/repos/insightface/recognition/arcface_torch/dataset.py", line 7, in <module>
+ModuleNotFoundErrorModuleNotFoundError: : No module named 'mxnet'No module named 'mxnet'
+
+    import mxnet as mx
+ModuleNotFoundError: No module named 'mxnet'
+E0202 00:02:17.219000 3935061 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 3935078) of binary: /home/ids/vimanach/.conda/envs/pydev/bin/python3.11
+Traceback (most recent call last):
+  File "/home/ids/vimanach/.conda/envs/pydev/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ids/vimanach/.conda/envs/pydev/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_v2.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-02-02_00:02:17
+  host      : node06.enst.fr
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3935079)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-02-02_00:02:17
+  host      : node06.enst.fr
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3935080)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-02-02_00:02:17
+  host      : node06.enst.fr
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3935078)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: node06: task 0: Exited with exit code 1
