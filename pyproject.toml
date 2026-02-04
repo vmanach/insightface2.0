@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arcface_torch"
+version = "0.1.0"
+description = "Research implementation of ArcFace for bias analysis."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.5.1",
+    "torchvision",
+    "opencv-python",
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "tensorboard"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
